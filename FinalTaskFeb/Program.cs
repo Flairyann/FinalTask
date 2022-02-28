@@ -26,3 +26,12 @@ void GenerateNewArray(string[] array, string[] newArray)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    int length = array.Length;
+    Console.Write("[");
+    for (int i = 0; i < length - 1; i++)
+        Console.Write($"'{array[i]}', ");
+    Console.WriteLine($"'{array[length - 1]}']");
+}
+
