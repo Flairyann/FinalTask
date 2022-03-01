@@ -2,8 +2,6 @@
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-string[] sourceArray = {"hello", "12345", "red", "world", "1984", "cat", "computer science", ":-)"};
-
 int CountNewArray(string[] array)
 {
     int newCount = 0;
@@ -35,3 +33,9 @@ void PrintArray(string[] array)
     Console.WriteLine($"'{array[length - 1]}']");
 }
 
+string[] sourceArray = {"hello", "12345", "red", "world", "1984", "cat", "computer science", ":-)"};
+string[] ResultArray = new string[CountNewArray(sourceArray)];
+GenerateNewArray(sourceArray, ResultArray);
+PrintArray(sourceArray);
+Console.Write(" -> ");
+PrintArray(ResultArray);
